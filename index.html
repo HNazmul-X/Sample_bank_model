@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Sample Bank Model || Made by H. Nazmul Hasssan</title>
+</head>
+
+<body>
+
+
+    <section class="welcome-box mt-5">
+        <h1  class="text-center">Welcome To Sample Model Bank</h1><s class="sp-3"></s>
+        <div class="submit-area">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 class="text-center">Login</h3><s class="sp-1"></s>
+                    <input type="text" name="" id="" placeholder="Enter Your Accout Id"> <s class="sp-1"></s>
+                    <input type="password" name="" id="" placeholder="Enter Your Account Password">
+                    <button type="submit" class="submit btn btn-success mt-2"> LOGIN</button>
+                </div>
+                <div class="col-md-4 bg-danger form-rightSite text-light">
+                    <div class="img-bg"><img src="images/credit-card-2-front-fill.svg" alt="" class="img-fluid"></div>
+                    <h5 class="text-light text-center">An International Bank</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- transaction Area -->
+    <section id="transaction-area" class="mt-5">
+
+        <div class="container">
+            <s class="sp-4"></s>
+            <div class="row row-cols-3 g-5">
+                <div class="col">
+                    <div class=" balance-card-1">
+                        <h5>Deposit</h5>
+                        <h1>$ <span id="depositeDisplay">00</span></h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" balance-card-2">
+                        <h5 id="">Withdraw</h5>
+                        <h1>$ <span id="withDrawDisplay">00</span></h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="balance-card-3">
+                        <h5>Balance</h5>
+                        <h1>$ <span id="balanceDisplay">1240</span></h1>
+                    </div>
+                </div>
+            </div>
+
+            <s class="sp-5"></s>
+            <div class="despsite-and-withdraw row row-cols-2">
+                <div class="col">
+                    <div class="form-area">
+                        <h4 class="text-center ">Deposite</h4>
+                        <input id="depositeAmount" type="text" class="form-control"><button id="depositeBtn"
+                            class="btn btn-success">Deposite</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-area">
+                        <h4 class="text-center">Withdraw</h4>
+                        <input id="withdrawAmount" type="text" class="form-control"><button id="withdrawBtn"
+                            class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+            <!-- deposit and widthdraw section here -->
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- script tags are Here -->
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

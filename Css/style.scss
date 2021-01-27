@@ -1,0 +1,84 @@
+:root{
+    --primary-color: hsla(276, 100%, 88%, 1);
+}
+
+.form-rightSite{
+    border-radius:10px;
+    .img-bg{
+        background:white;
+        padding:20px;
+        margin:20px;
+        border-radius: 50%;
+    }
+}
+
+.welcome-box{
+    width:700px;
+    margin:auto;
+    background-color:var(--primary-color);
+    padding:50px 0px;
+    border-radius:20px;
+
+}
+.submit-area{
+    width:80%;
+    background:white;
+    margin:auto;
+    padding:20px;
+    border-top:4px solid rgb(127, 2, 211);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    input{
+        width:100%;
+        padding:10px;
+        border:1px solid #68686857;
+        border-radius: 10px;
+        &:focus{
+            outline: skyblue;
+            border:none;
+            box-shadow: 0 0 3px 1px skyblue;
+        }
+    }
+}
+@for $i from 1 through 5 {
+    .sp-#{$i}{
+        padding: 0.5rem * $i;
+        display:block;
+    }
+}
+@for $i from 1 through 5 {
+    .sm-#{$i}{
+        margin: 0.5rem * $i;
+        display:block;
+    }
+}
+
+
+[class*="balance-card"]{
+    padding:20px;
+    color:white;
+    border-radius:10px;
+}
+
+@for $i from 1 through 3 {
+    .balance-card-#{$i}{
+        background:adjust-hue($color: slateblue, $degrees: 50 * $i)
+}
+#transaction-area{
+    display:none;
+}
+}
+.despsite-and-withdraw{
+    .form-area{
+        @extend .submit-area;
+        width:100%;
+
+        button.btn{
+            margin-top:20px;
+        }
+    }
+}
